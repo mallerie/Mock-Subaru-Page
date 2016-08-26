@@ -9,3 +9,12 @@ body {
   background: #313233;
 }
 
+header {
+  height: 180px;
+  background: #FEFFFF;
+}
+
+.top-line > p {
+  color: #193D93;
+}
+
