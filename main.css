@@ -3,6 +3,8 @@
   margin: 0;
   padding: 0;
   /*font-family: sans-serif;*/
+  text-decoration: none;
+  color: black;
 }
 
 body {
@@ -15,7 +17,7 @@ body {
   background: #FEFFFF;
 }
 
-/*HEADER*/
+/*************HEADER**************/
 
 header {
   height: 180px;
@@ -23,15 +25,49 @@ header {
 }
 
 .top-line {
-  padding: 5px;
+  padding: 5px 5px 0 36px;
 }
 
 .top-line > p {
   font-size: 13px;
   color: #193D93;
 }
+.logo-wrapper {
+  width: 180px;
+}
 
 .logo-wrapper > img {
-  width: 204px;
+  width: 191px;
+  padding: 12px 0 0 6px;
 }
+
+.upper-nav {
+  display: flex;
+}
+
+h1 {
+  font-size: 37px;
+  padding: 32px 0 0 9px;
+}
+
+h2 {
+  font-size: 19px;
+  padding: 5px 0 0 0;
+}
+
+.toggle-items-wrapper {
+  display: flex;
+}
+
+.toggle-items {
+  margin: 1px 5px 0px 9px;
+  border-top: 1px solid black;
+  opacity: .5;
+}
+
+.toggle-items:hover {
+  opacity: 1;
+}
+
+/************HEADER****************/
 
