@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   /*font-family: sans-serif;*/
+  /*font-family: 'Questrial', sans-serif;*/
   text-decoration: none;
   color: black;
   list-style-type: none;
@@ -117,6 +118,7 @@ h2 {
 .lower-nav {
   display: flex;
   justify-content: space-between;
+  height: 37px;
 }
 
 .left-nav-bar {
@@ -133,7 +135,7 @@ h2 {
 }
 
 .home-background > img {
-  height: 23px;
+  height: 19px;
   margin: 5px 5px;
 }
 
