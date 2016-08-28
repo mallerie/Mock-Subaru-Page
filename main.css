@@ -5,6 +5,7 @@
   /*font-family: sans-serif;*/
   text-decoration: none;
   color: black;
+  list-style-type: none;
 }
 
 body {
@@ -30,14 +31,17 @@ header {
 
 }
 
-.top-line {
+#top-line {
   padding: 5px 5px 0 36px;
 }
 
-.top-line > p {
+#top-line > p {
   font-size: 13px;
   color: #193D93;
 }
+
+/*******Styling the line with the logo below: ****/
+
 .logo-wrapper {
   width: 180px;
 }
@@ -63,17 +67,100 @@ h2 {
 
 .toggle-items-wrapper {
   display: flex;
+  flex-direction: row;
+}
+
+.toggle-items-wrapper > div {
+/*  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid red;*/
+}
+
+.toggle-items-wrapper > ul {
+  display: flex;
+}
+
+.test {
+  /*position: relative;*/
+  /*width: 0;*/
+  /*height: 0;*/
+  /*border-left: 10px solid transparent;*/
+  /*border-right: 10px solid transparent;*/
+  /*border-bottom: 10px solid red;*/
+  /*border-top: 1px solid black;*/
+
 }
 
 .toggle-items {
   margin: 1px 5px 0px 9px;
   border-top: 1px solid black;
   opacity: .5;
+
+  /*position: absolute;*/
+  /*top: 0;*/
+  /*left: 50%;*/
+  /*width: 0;*/
+  /*height: 0;*/
+  /*border-left: 10px solid transparent;*/
+  /*border-right: 10px solid transparent;*/
+  /*border-bottom: 10px solid red;*/
 }
 
 .toggle-items:hover {
   opacity: 1;
 }
 
+/*******Styling the line with the home icon below: ****/
+
+.lower-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-nav-bar {
+  margin: 0 0 0 36px;
+  display: flex;
+}
+
+.home-background {
+  background: #151D56;
+  margin: 0 0 0 10px;
+  height: 28px;
+  width: 30px;
+  border-radius: 10%;
+}
+
+.home-background > img {
+  height: 23px;
+  margin: 5px 5px;
+}
+
+.right-nav-bar {
+  display: flex;
+}
+
 /************HEADER****************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
