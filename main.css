@@ -131,12 +131,13 @@ h2 {
 }
 
 .home-wrapper {
-  width: 50px;
+  width: 52px;
   height: 30px;
 }
 
 .home-background {
-  background: #151D56;
+  /*This color is dark blue*/
+  background: #151D56; 
   margin: 0 0 0 10px;
   height: 28px;
   width: 30px;
@@ -151,14 +152,37 @@ h2 {
 
 .about-wrapper {
   width: 72px;
+  border-left: 1px solid #FEFFFF;
+  box-shadow: -1px 0 0 #C7C8CA;
+}
+
+.about-wrapper > p {
+  color: #3D63A2;
+  margin: 6px 0 0 14px;
 }
 
 .gear-wrapper {
   width: 158px;
+  border-left: 1px solid #FEFFFF;
+  box-shadow: -1px 0 0 #C7C8CA;
+}
+
+.gear-wrapper > p {
+  color: #3D63A2;
+  margin: 6px 0 0 14px;
 }
 
 .maintenance-wrapper {
   width: 197px;
+  border-left: 1px solid #FEFFFF;
+  box-shadow: -1px 0 0 #C7C8CA;
+  border-right: 1px solid #FEFFFF;
+  box-shadow: 1px 0 0 #C7C8CA;
+}
+
+.maintenance-wrapper > p {
+  color: #3D63A2;
+  margin: 6px 0 0 14px;
 }
 
 .right-nav-bar {
