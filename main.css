@@ -54,6 +54,7 @@ header {
 
 .upper-nav {
   display: flex;
+  height: 122px;
 }
 
 h1 {
@@ -122,8 +123,16 @@ h2 {
 }
 
 .left-nav-bar {
-  margin: 0 0 0 36px;
+  margin: 0 0 0 34px;
   display: flex;
+  height: 30px;
+  border-left: 1px solid #FEFFFF;
+  box-shadow: -1px 0 0 #C7C8CA;
+}
+
+.home-wrapper {
+  width: 50px;
+  height: 30px;
 }
 
 .home-background {
@@ -132,11 +141,24 @@ h2 {
   height: 28px;
   width: 30px;
   border-radius: 10%;
+  box-shadow: 0px 1px #FEFFFF;
 }
 
 .home-background > img {
   height: 19px;
   margin: 5px 5px;
+}
+
+.about-wrapper {
+  width: 72px;
+}
+
+.gear-wrapper {
+  width: 158px;
+}
+
+.maintenance-wrapper {
+  width: 197px;
 }
 
 .right-nav-bar {
