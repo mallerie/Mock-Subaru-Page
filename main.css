@@ -4,6 +4,7 @@
   padding: 0;
   /*font-family: sans-serif;*/
   /*font-family: 'Questrial', sans-serif;*/
+  font-family: 'Nobile', sans-serif;
   text-decoration: none;
   color: black;
   list-style-type: none;
@@ -204,6 +205,21 @@ h2 {
   height: 111px;
   width: 100%;
   background-repeat: no-repeat;
+}
+
+#hero ul {
+  /*display: flex;*/
+  padding: 18px 25px;
+}
+
+#hero li {
+  font-size: 29px;
+  font-weight: bolder;
+}
+
+#hero li:last-child {
+  font-size: 15px;
+  padding: 7px 0 0 1px;
 }
 
 
