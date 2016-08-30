@@ -156,7 +156,7 @@ h2 {
   box-shadow: -1px 0 0 #C7C8CA;
 }
 
-.about-wrapper > p {
+.about-wrapper p {
   color: #3D63A2;
   margin: 6px 0 0 14px;
 }
@@ -188,6 +188,25 @@ h2 {
 .right-nav-bar {
   display: flex;
 }
+
+#search-bar {
+  display: flex;
+}
+
+#search-bar li:last-child img {
+  width: 20px;
+}
+
+#hero {
+  background: url(./Images/hero.jpg);
+  background-position: 0px -131px;
+  background-size: 100%;
+  height: 111px;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+
 
 /************HEADER****************/
 

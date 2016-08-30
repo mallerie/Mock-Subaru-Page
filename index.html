@@ -6,6 +6,7 @@
   <link rel="stylesheet" type="text/css" href="main.css">
   <link href="./Images/subaru-favicon.ico" rel="icon" type="image/x-icon" />
   <!-- The favicon is not official copy, I just made one from a logo png file. -->
+  <script type="text/javascript" src="main.js" async></script>
 </head>
 <body>
 
@@ -85,8 +86,29 @@
         </div>
 
         <div class="right-nav-bar">
-          <div class="fb-like-wrapper"><p>FB</p></div>
-          <div class="search-wrapper">search</div>
+          <div class="fb-like-wrapper">
+<!--             <div class="fb-like" 
+                 data-href="https://www.facebook.com/subaruofamerica/" data-width="105" 
+                 data-layout="button_count" 
+                 data-action="like" 
+                 data-size="small" 
+                 data-show-faces="false" 
+                 data-share="false">
+            </div> -->
+            <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fsubaruofamerica%2F&width=105&layout=button_count&action=like&size=small&show_faces=false&share=false&height=21&appId" width="105" height="21" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+          </div>
+
+          <div class="search-wrapper">
+            <ul id="search-bar">
+              <li>Search</li>
+              <li>
+                <input type="text" name="search-request" placeholder="Search Words or Part Number">
+              </li>
+              <li>
+                <img src="./Images/magnifying-glass.png" alt="Magnifying glass">
+              </li> 
+            </ul>
+          </div>
         </div>
       </div>
     
@@ -95,10 +117,8 @@
   </header>
 
   <div class="app">
-
-
     <main>
-      
+      <div id="hero"></div>
     </main>
 
     <footer>
