@@ -254,6 +254,27 @@ h2 {
   font-weight: bold;
 }
 
+#select-a-dealer {
+  height: 52px;
+  margin: 0 31px;
+  background: blue;
+}
+
+#select-a-dealer h3 {
+  padding: 15px 0 0 32px;
+  color: white;
+  font-size: 25px;
+}
+
+#enter-zip {
+  height: 100px;
+  background: #EDEDED; 
+  margin: 0 31px;
+}
+
+#enter-zip ul {
+  display: flex;
+}
 
 
 /*********MAIN SECTION*************/
