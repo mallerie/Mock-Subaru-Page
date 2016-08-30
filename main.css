@@ -100,7 +100,7 @@ h2 {
   margin: 1px 5px 0px 9px;
   border-top: 1px solid black;
   opacity: .5;
-
+  font-style: italic;
   /*position: absolute;*/
   /*top: 0;*/
   /*left: 50%;*/
@@ -160,6 +160,8 @@ h2 {
 .about-wrapper p {
   color: #3D63A2;
   margin: 6px 0 0 14px;
+  font-size: 15px;
+
 }
 
 .gear-wrapper {
@@ -171,6 +173,8 @@ h2 {
 .gear-wrapper > p {
   color: #3D63A2;
   margin: 6px 0 0 14px;
+  font-size: 15px;
+
 }
 
 .maintenance-wrapper {
@@ -184,6 +188,8 @@ h2 {
 .maintenance-wrapper > p {
   color: #3D63A2;
   margin: 6px 0 0 14px;
+  font-size: 15px;
+
 }
 
 .right-nav-bar {
@@ -197,6 +203,14 @@ h2 {
 #search-bar li:last-child img {
   width: 20px;
 }
+
+
+
+
+/************HEADER****************/
+/*********MAIN SECTION*************/
+
+
 
 #hero {
   background: url(./Images/hero.jpg);
@@ -222,10 +236,27 @@ h2 {
   padding: 7px 0 0 1px;
 }
 
+#site-map {
+  height: 30px;
+  background: #B1B2B3;
+  border-top: 1px solid #D1D2D3;
+  border-bottom: 1px solid #A9AAAB;
+}
+
+#site-map ul {
+  display: flex;
+  height: 100%;
+  padding: 7px 0 0 30px;
+}
+
+#site-map li {
+  margin: 0px 12px 0 1px;
+  font-weight: bold;
+}
 
 
-/************HEADER****************/
 
+/*********MAIN SECTION*************/
 
 
 
