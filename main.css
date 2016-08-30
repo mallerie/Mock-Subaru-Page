@@ -274,8 +274,33 @@ h2 {
 
 #enter-zip ul {
   display: flex;
+  padding: 21px 261px;
 }
 
+#enter-zip li {
+  font-size: 24px;
+}
+
+#enter-zip li:first-child {
+  margin: 0 19px 0 0;
+  padding: 13px 2px 0 0;
+}
+
+#enter-zip input {
+  height: 51px;
+  width: 254px;
+  border: 1px solid #565952;
+} 
+
+#enter-zip li:last-child {
+  width: 51px;
+  height: 51px;
+  background: #3F649F;
+  border: 1px solid #565952;
+  color: white;
+  padding: 12px 8px;
+  font-size: 21px;
+}
 
 /*********MAIN SECTION*************/
 
