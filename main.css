@@ -17,6 +17,7 @@ body {
 .app {
   margin: 0 0 0 35px;
   width: 1212px;
+  /*width: 95%;*/
   background: #FEFFFF;
 }
 
@@ -255,7 +256,7 @@ h2 {
 }
 
 #select-a-dealer {
-  height: 52px;
+  /*height: 52px;*/
   margin: 0 31px;
   background: blue;
 }
@@ -264,12 +265,13 @@ h2 {
   padding: 15px 0 0 32px;
   color: white;
   font-size: 25px;
+  height: 52px;
 }
 
 #enter-zip {
   height: 100px;
   background: #EDEDED; 
-  margin: 0 31px;
+  /*margin: 0 31px;*/
 }
 
 #enter-zip ul {
@@ -278,12 +280,13 @@ h2 {
 }
 
 #enter-zip li {
-  font-size: 24px;
+  font-size: 23px;
 }
 
 #enter-zip li:first-child {
-  margin: 0 19px 0 0;
+  margin: 0 10px 0 0;
   padding: 13px 2px 0 0;
+  width: 228px;
 }
 
 #enter-zip input {
@@ -298,9 +301,92 @@ h2 {
   background: #3F649F;
   border: 1px solid #565952;
   color: white;
-  padding: 12px 8px;
-  font-size: 21px;
+  padding: 15px 9px;
+  font-size: 20px;
 }
+
+#all-dealers {
+  margin: 106px 63px;
+}
+
+h4 {
+  font-size: 20px;
+  margin: 0 0 16px 0;
+}
+
+.dealer-list-item {
+  border-top: 1px solid black;
+  padding: 28px 0 0 3px;
+  display: flex;
+}
+
+.google-map {
+
+}
+
+.list-count {
+
+}
+
+.item-info {
+  display: flex;
+}
+
+.item-info-left {
+  /*flex-grow: 1;*/
+}
+
+.item-info-right {
+  /*flex-grow: 1;*/
+}
+
+.dealer-title {
+
+}
+
+h5 {
+
+}
+
+.dealer-address {
+
+}
+
+.dealer-address p {
+
+}
+
+.dealer-address p:first-child {
+
+}
+
+.dealer-address p:nth-child(2) {
+  
+}
+
+.dealer-address p:last-child {
+  
+}
+
+.dealer-phone {
+
+}
+
+.dealer-phone p {
+
+}
+
+.item-info-right {
+
+}
+
+.item-info-right button {
+  
+}
+
+
+
+
 
 /*********MAIN SECTION*************/
 
