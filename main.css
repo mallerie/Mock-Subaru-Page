@@ -354,12 +354,17 @@ h4 {
 
 .item-info-right button {
   background: blue;
-  color: white;
-  font-size: 27px;
   width: 260px;
   height: 44px;
   margin: 95px 7px 0 0;
 }
+
+.item-info-right a {
+  color: white;
+  font-size: 27px;
+}
+
+
 
 .dealer-title {
 
