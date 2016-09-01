@@ -321,15 +321,26 @@ h4 {
 }
 
 .google-map {
-
+  width: 240px;
+  margin: 0 20px 0 0;
 }
 
 .list-count {
 
 }
 
+.list-count p {
+  font-size: 25px;
+}
+
+.dealer-details {
+  margin: 2px 0 0 7px;
+}
+
 .item-info {
   display: flex;
+  min-height: 190px;
+  justify-content: space-between;
 }
 
 .item-info-left {
@@ -340,16 +351,27 @@ h4 {
   /*flex-grow: 1;*/
 }
 
+.item-info-right button {
+  background: blue;
+  color: white;
+  font-size: 27px;
+  width: 260px;
+  height: 44px;
+  margin: 95px 7px 0 0;
+}
+
 .dealer-title {
 
 }
 
 h5 {
-
+  font-size: 21px;
+  font-weight: lighter;
 }
 
 .dealer-address {
-
+  margin: 12px 0 0 0;
+  font-size: 18px;
 }
 
 .dealer-address p {
@@ -369,20 +391,26 @@ h5 {
 }
 
 .dealer-phone {
-
+  margin: 12px 0 0 0;
 }
 
 .dealer-phone p {
+  font-size: 27px;
+}
+
+h6 {
+  font-size: 20px;
 
 }
 
-.item-info-right {
-
+.review-content {
+  margin: 12px 0 0 0;  
 }
 
-.item-info-right button {
-  
+.review-content p {
+  line-height: 20px;
 }
+
 
 
 
