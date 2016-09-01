@@ -59,14 +59,18 @@ header {
   height: 122px;
 }
 
+.toggle-title {
+  height: 74px;
+}
+
 h1 {
-  font-size: 37px;
-  padding: 32px 0 0 9px;
+  font-size: 32px;
+  padding: 38px 0 0 9px;
 }
 
 h2 {
-  font-size: 19px;
-  padding: 5px 0 0 0;
+  font-size: 18px;
+  padding: 4px 0 0 0;
 }
 
 .toggle-items-wrapper {
@@ -86,6 +90,10 @@ h2 {
   display: flex;
 }
 
+.toggle-items-wrapper a {
+
+}
+
 .test {
   /*position: relative;*/
   /*width: 0;*/
@@ -102,18 +110,42 @@ h2 {
   border-top: 1px solid black;
   opacity: .5;
   font-style: italic;
-  /*position: absolute;*/
-  /*top: 0;*/
-  /*left: 50%;*/
-  /*width: 0;*/
-  /*height: 0;*/
-  /*border-left: 10px solid transparent;*/
-  /*border-right: 10px solid transparent;*/
-  /*border-bottom: 10px solid red;*/
+  position: relative;
+/*  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid red;*/
 }
 
 .toggle-items:hover {
   opacity: 1;
+}
+
+.triangle {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid black;
+}
+
+.triangle:hover {
+  /*display: inline;*/
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid black;
 }
 
 /*******Styling the line with the home icon below: ****/
@@ -160,8 +192,8 @@ h2 {
 
 .about-wrapper p {
   color: #3D63A2;
-  margin: 6px 0 0 14px;
-  font-size: 15px;
+  margin: 8px 0 0 14px;
+  font-size: 14px;
 
 }
 
@@ -173,8 +205,8 @@ h2 {
 
 .gear-wrapper p {
   color: #3D63A2;
-  margin: 6px 0 0 14px;
-  font-size: 15px;
+  margin: 8px 0 0 16px;
+  font-size: 14px;
 
 }
 
@@ -188,8 +220,8 @@ h2 {
 
 .maintenance-wrapper p {
   color: #3D63A2;
-  margin: 6px 0 0 14px;
-  font-size: 15px;
+  margin: 8px 0 0 13px;
+  font-size: 14px;
 
 }
 
@@ -197,12 +229,25 @@ h2 {
   display: flex;
 }
 
+.search-wrapper {
+  margin: 0 22px 0 0;
+  background: #bbb;
+}
+
 #search-bar {
   display: flex;
+  height: 28px;
 }
 
 #search-bar li:last-child img {
-  width: 20px;
+  width: 13px;
+}
+
+#search-bar li:last-child {
+  height: 28px;
+  width: 28px;
+  background: yellow;
+  margin: 0 8px 0 0;
 }
 
 
