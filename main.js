@@ -224,8 +224,9 @@ locations.forEach(function (location) {
                         </div>`
 
  
-    document.getElementById('all-dealers').innerHTML = dealerListItem;
-    
+    // document.appendChild('all-dealers') = dealerListItem;
+    .appendChild(document.createTextnode('all-dealers')) = dealerListItem;
+
 })
 
   // function postItem() {
