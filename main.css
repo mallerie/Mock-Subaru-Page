@@ -38,7 +38,7 @@ header {
   padding: 5px 5px 0 36px;
 }
 
-#top-line > p {
+#top-line p {
   font-size: 13px;
   color: #193D93;
 }
@@ -49,7 +49,7 @@ header {
   width: 180px;
 }
 
-.logo-wrapper > img {
+.logo-wrapper img {
   width: 183px;
   padding: 12px 0 0 6px;
 }
@@ -74,7 +74,7 @@ h2 {
   flex-direction: row;
 }
 
-.toggle-items-wrapper > div {
+.toggle-items-wrapper div {
 /*  width: 0;
   height: 0;
   border-left: 10px solid transparent;
@@ -82,7 +82,7 @@ h2 {
   border-bottom: 10px solid red;*/
 }
 
-.toggle-items-wrapper > ul {
+.toggle-items-wrapper ul {
   display: flex;
 }
 
@@ -147,7 +147,7 @@ h2 {
   box-shadow: 0px 1px #FEFFFF;
 }
 
-.home-background > img {
+.home-background img {
   height: 19px;
   margin: 5px 5px;
 }
@@ -171,7 +171,7 @@ h2 {
   box-shadow: -1px 0 0 #C7C8CA;
 }
 
-.gear-wrapper > p {
+.gear-wrapper p {
   color: #3D63A2;
   margin: 6px 0 0 14px;
   font-size: 15px;
@@ -186,7 +186,7 @@ h2 {
   box-shadow: 1px 0 0 #C7C8CA;
 }
 
-.maintenance-wrapper > p {
+.maintenance-wrapper p {
   color: #3D63A2;
   margin: 6px 0 0 14px;
   font-size: 15px;
@@ -306,12 +306,12 @@ h2 {
 }
 
 #all-dealers {
-  margin: 106px 63px;
+  margin: 18px 63px;
 }
 
 h4 {
   font-size: 20px;
-  margin: 0 0 16px 0;
+  margin: 104px 0px 0px 63px;
 }
 
 .dealer-list-item {
@@ -422,12 +422,20 @@ h6 {
   text-align: end;  
 }
 
-
-
-
-
-
 /*********MAIN SECTION*************/
+
+/*********FOOTER SECTION*************/
+.footer {
+  height: 228px;
+}
+
+.upper-footer {
+  background: #E5E4DF;
+}
+
+.lower-footer {
+  background: #323232;
+}
 
 
 

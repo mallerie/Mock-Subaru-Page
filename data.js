@@ -65,7 +65,7 @@ locations = [
      review_count: "59",
      dealer_website: "http://http://www.cioccasubaru.com/parts/index.htm"
  },
-  {
+ {
      name: "Kearny Mesa Subaru Parts",
      address:
      {
@@ -87,7 +87,7 @@ locations = [
      review_count: "2",
      dealer_website: "http://http://www.cioccasubaru.com/parts/index.htm"
  },
-  {
+ {
      name: "Rafferty Subaru Parts",
      address:
      {
@@ -109,7 +109,7 @@ locations = [
      review_count: "14",
      dealer_website: "http://http://www.cioccasubaru.com/parts/index.htm"
  },
-  {
+ {
      name: "The Autobarn Subaru of Countryside Parts",
      address:
      {
