@@ -29,7 +29,9 @@ let locations = [
      address:
      {
          street: "5700 Sunrise Hwy",
+         mapStreet: "5700+Sunrise+Hwy"
          cityStateZip: "Sayville, NY, 11782",
+         mapCityStateZip: "Sayville,+NY,+11782"
          country: "USA"
      },
      phone: "631.567.8100",
@@ -51,7 +53,9 @@ let locations = [
      address:
      {
          street: "95 Old York Rd",
+         mapStreet: "95+Old+York+Rd",
          cityStateZip: "Jenkintown, PA, 19046",
+         mapCityStateZip: "Jenkintown,+PA,+19046",
          country: "USA"
      },
      phone: "800.440.0130",
@@ -73,7 +77,9 @@ let locations = [
      address:
      {
          street: "4797 Convoy St",
+         mapStreet: "4797+Convoy+St",
          cityStateZip: "San Diego, CA, 92111",
+         mapCityStateZip: "San Diego,+CA,+92111",
          country: "USA"
      },
      phone: "866.983.0813",
@@ -95,7 +101,9 @@ let locations = [
      address:
      {
          street: "46700 West Chester Pike",
-         cityStateZip: "Newtown Square, PA 19073",
+         mapStreet: "46700+West+Chester+Pike",
+         cityStateZip: "Newtown+Square,+PA+19073",
+         mapCityStateZip: "Newtown+Square,+PA+19073",
          country: "USA"
      },
      phone: "610.353.6906",
@@ -116,8 +124,10 @@ let locations = [
      name: "The Autobarn Subaru of Countryside Parts",
      address:
      {
-         street: "6191 Joliet Road",
-         cityStateZip: "Countryside, IL 60525",
+         street: "6191+Joliet+Road",
+         mapStreet: "6191+Joliet+Road",
+         cityStateZip: "Countryside,+IL+60525",
+         mapCityStateZip: "Countryside,+IL+60525",
          country: "USA"
      },
      phone: "888.864.0263",
@@ -201,11 +211,19 @@ let dealerListItem = `<div class="dealer-list-item">
           </div>
         </div>`
 
-function postItem() {
-  document.getElementById('all-dealers').innerHTML = dealerListItem;
-}
+// function postItem() {
+//   document.getElementById('all-dealers').innerHTML = dealerListItem;
+// }
 
-postItem();
+// postItem();
+
+locations.forEach(function (location) {
+
+  let theMapStreet = location.address.mapStreet;
+
+  console.log(location);
+  console.log(theMapStreet);
+})
 
 
 

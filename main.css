@@ -431,10 +431,16 @@ h6 {
 
 .upper-footer {
   background: #E5E4DF;
+  display: flex;
 }
 
 .lower-footer {
   background: #323232;
+}
+
+.lower-right-footer p,
+.lower-right-footer a {
+  color: white;
 }
 
 
