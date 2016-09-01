@@ -31,16 +31,21 @@ header {
   background: -webkit-linear-gradient(top,  #feffff 76%,#cecfd1 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom,  #feffff 76%,#cecfd1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#cecfd1',GradientType=0 ); /* IE6-9 */
-
+  border-bottom: 1px solid black;
 }
 
 #top-line {
   padding: 5px 5px 0 36px;
+  height: 20px;
 }
 
 #top-line p {
-  font-size: 13px;
+  font-size: 11px;
   color: #193D93;
+}
+
+nav {
+  height: 160px;
 }
 
 /*******Styling the line with the logo below: ****/
@@ -56,7 +61,7 @@ header {
 
 .upper-nav {
   display: flex;
-  height: 122px;
+  height: 113px;
 }
 
 .toggle-title {
@@ -153,13 +158,13 @@ h2 {
 .lower-nav {
   display: flex;
   justify-content: space-between;
-  height: 37px;
+  height: 46px;
 }
 
 .left-nav-bar {
-  margin: 0 0 0 34px;
+  margin: 8px 0 0 34px;
   display: flex;
-  height: 30px;
+  height: 37px;
   border-left: 1px solid #FEFFFF;
   box-shadow: -1px 0 0 #C7C8CA;
 }
@@ -227,27 +232,59 @@ h2 {
 
 .right-nav-bar {
   display: flex;
+  height: 47px;
+}
+
+.fb-like-wrapper {
+  width: 130px;
+  padding: 12px;
 }
 
 .search-wrapper {
   margin: 0 22px 0 0;
-  background: #bbb;
+  background: #333;
+  border-radius: 6px 6px 0 0;
 }
 
 #search-bar {
   display: flex;
-  height: 28px;
+  justify-content: flex-end;
+  height: 47px;
+  width: 300px;
+}
+
+#search-bar li:first-child {
+  color: white;
+  padding: 16px 21px 0 0px;
+  font-size: 14px;
 }
 
 #search-bar li:last-child img {
   width: 13px;
+  margin: 8px 0px 0 6px;
 }
 
 #search-bar li:last-child {
   height: 28px;
   width: 28px;
-  background: yellow;
-  margin: 0 8px 0 0;
+  margin: 8px 7px 0 0;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dcdbd7+0,999c95+100 */
+  background: #dcdbd7; /* Old browsers */
+  background: -moz-linear-gradient(top,  #dcdbd7 0%, #999c95 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #dcdbd7 0%,#999c95 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #dcdbd7 0%,#999c95 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dcdbd7', endColorstr='#999c95',GradientType=0 ); /* IE6-9 */
+
+}
+
+#search-bar li:nth-child(2) {
+  height: 37px;
+}
+
+#search-bar li input {
+  height: 28px;
+  width: 187px;
+  margin: 8px 0 0 0;
 }
 
 
@@ -265,11 +302,18 @@ h2 {
   height: 111px;
   width: 100%;
   background-repeat: no-repeat;
+  box-shadow: inset 3px 3px 56px 10px rgba(0,0,0,0.75);
 }
 
 #hero ul {
-  /*display: flex;*/
   padding: 18px 25px;
+  height: 111px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0.25+0,0+49,0+100 */
+  background: -moz-linear-gradient(top,  rgba(255,255,255,0.25) 0%, rgba(255,255,255,0) 49%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(255,255,255,0.25) 0%,rgba(255,255,255,0) 49%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(255,255,255,0.25) 0%,rgba(255,255,255,0) 49%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+
 }
 
 #hero li {
@@ -286,7 +330,7 @@ h2 {
   height: 30px;
   background: #B1B2B3;
   border-top: 1px solid #D1D2D3;
-  border-bottom: 1px solid #A9AAAB;
+  border-bottom: 1px solid #AAA;
 }
 
 #site-map ul {
@@ -298,6 +342,7 @@ h2 {
 #site-map li {
   margin: 0px 12px 0 1px;
   font-weight: bold;
+  font-size: 15px;
 }
 
 #select-a-dealer {
@@ -307,10 +352,17 @@ h2 {
 }
 
 #select-a-dealer h3 {
-  padding: 15px 0 0 32px;
+  padding: 13px 0 0 32px;
   color: white;
   font-size: 25px;
   height: 52px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3e62a0+0,003569+100 */
+  background: rgb(62,98,160); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(62,98,160,1) 0%, rgba(0,53,105,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(62,98,160,1) 0%,rgba(0,53,105,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(62,98,160,1) 0%,rgba(0,53,105,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e62a0', endColorstr='#003569',GradientType=0 ); /* IE6-9 */
+
 }
 
 #enter-zip {
@@ -330,7 +382,7 @@ h2 {
 
 #enter-zip li:first-child {
   margin: 0 10px 0 0;
-  padding: 13px 2px 0 0;
+  padding: 15px 2px 0 0;
   width: 228px;
 }
 
@@ -351,7 +403,7 @@ h2 {
 }
 
 #all-dealers {
-  margin: 18px 63px;
+  margin: 18px 63px 0 63px;
 }
 
 h4 {
@@ -398,15 +450,17 @@ h4 {
 }
 
 .item-info-right button {
-  background: blue;
+  background: #3F63A1;
   width: 260px;
   height: 44px;
-  margin: 95px 7px 0 0;
+  margin: 97px 7px 0 0;
+  border-radius: 7px;
+  border: 1px solid #575852;
 }
 
 .item-info-right a {
   color: white;
-  font-size: 27px;
+  font-size: 26px;
 }
 
 
@@ -470,22 +524,64 @@ h6 {
 /*********MAIN SECTION*************/
 
 /*********FOOTER SECTION*************/
-.footer {
+footer {
   height: 228px;
+  border-top: 1px solid black;
 }
 
 .upper-footer {
   background: #E5E4DF;
   display: flex;
+  padding: 35px 0px 0 66px;
+  height: 104px;
+}
+
+.upper-footer img {
+  width: 35px;
+  height: 35px;
+}
+
+#footer-disclaimer p {
+  font-size: 13px;
+  padding: 3px 0 0 9px;
+
 }
 
 .lower-footer {
   background: #323232;
+  height: 123px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lower-left-footer {
+  margin: 0 0 0 64px;
+}
+
+.lower-left-footer p {
+  color: #ccc;
+  font-size: 10px;
+  padding: 19px 3px;
+}
+
+.lower-left-footer p:last-child {
+  padding: 2px 2px;
+  font-size: 12px;
+  font-weight: bolder;
+}
+
+.lower-right-footer {
+  margin: 17px 54px;
+  font-size: 13px;
 }
 
 .lower-right-footer p,
 .lower-right-footer a {
   color: white;
+}
+
+.lower-right-footer a {
+  text-decoration: underline;
 }
 
 
