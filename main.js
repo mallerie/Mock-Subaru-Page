@@ -1,5 +1,7 @@
 let dealerListItem = "";
 
+let count = "";
+
 let locations = [
  {
      name: "Ciocca Subaru Parts",
@@ -147,11 +149,7 @@ let locations = [
      dealer_website: "http://http://www.cioccasubaru.com/parts/index.htm"
  },
  ];
-// let locationsCount = [];
 
-// for (var i = locations.length; i = 1; i++) {
-//   locationsCount.push(i);
-// }
 
 locations.forEach(function (location) {
 
@@ -175,7 +173,7 @@ locations.forEach(function (location) {
                           </div>
 
                           <div class="list-count">
-                            <p id="review-count">1.</p>
+                            
                           </div>
 
                           <div class="dealer-details">
@@ -234,13 +232,31 @@ locations.forEach(function (location) {
 
 document.getElementById('all-dealers').innerHTML = dealerListItem;
 
-// let count = "";
+var locationsCount = [];
 
-// locationsCount.forEach( function (item) {
-//   numbersCount += "<p id='review-count'>" + item + "</p>";
-// })
+// function getLocationsCount(countArray) {
 
-// document.getQuerySelector('.list-count').innerHTML = numbersCount;
+for (var i = 1; i <= locations.length; i++) {
+   locationsCount.push(i);
+
+}
+  // return locationsCount;
+// }
+
+locationsCount.forEach(function(location) {
+
+  count = "<p>" + location + ".</p>";
+
+  // document.getElementById('list-count').innerHTML = count;
+    var x = document.getElementsByClassName('list-count');
+    var i;
+
+    for (i = 1; i <= x.length; i++) {
+        x[i].innerHTML = count;
+  }
+
+})
+
 
 
 

@@ -2,8 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /*font-family: sans-serif;*/
-  /*font-family: 'Questrial', sans-serif;*/
   font-family: 'Nobile', sans-serif;
   text-decoration: none;
   color: black;
@@ -17,7 +15,8 @@ body {
 .app {
   margin: 0 0 0 35px;
   width: 1212px;
-  /*width: 95%;*/
+  /*width: 95%; */ 
+  /*Turn on percent width to responsiveness.*/
   background: #FEFFFF;
 }
 
@@ -83,31 +82,8 @@ h2 {
   flex-direction: row;
 }
 
-.toggle-items-wrapper div {
-/*  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid red;*/
-}
-
 .toggle-items-wrapper ul {
   display: flex;
-}
-
-.toggle-items-wrapper a {
-
-}
-
-.test {
-  /*position: relative;*/
-  /*width: 0;*/
-  /*height: 0;*/
-  /*border-left: 10px solid transparent;*/
-  /*border-right: 10px solid transparent;*/
-  /*border-bottom: 10px solid red;*/
-  /*border-top: 1px solid black;*/
-
 }
 
 .toggle-items {
@@ -116,14 +92,6 @@ h2 {
   opacity: .5;
   font-style: italic;
   position: relative;
-/*  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid red;*/
 }
 
 .toggle-items:hover {
@@ -142,7 +110,6 @@ h2 {
 }
 
 .triangle:hover {
-  /*display: inline;*/
   position: absolute;
   top: 0;
   left: 50%;
@@ -274,7 +241,6 @@ h2 {
   background: -webkit-linear-gradient(top,  #dcdbd7 0%,#999c95 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom,  #dcdbd7 0%,#999c95 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dcdbd7', endColorstr='#999c95',GradientType=0 ); /* IE6-9 */
-
 }
 
 #search-bar li:nth-child(2) {
@@ -287,13 +253,9 @@ h2 {
   margin: 8px 0 0 0;
 }
 
-
-
-
 /************HEADER****************/
+
 /*********MAIN SECTION*************/
-
-
 
 #hero {
   background: url(./Images/hero.jpg);
@@ -308,12 +270,7 @@ h2 {
 #hero ul {
   padding: 18px 25px;
   height: 111px;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0.25+0,0+49,0+100 */
-  background: -moz-linear-gradient(top,  rgba(255,255,255,0.25) 0%, rgba(255,255,255,0) 49%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  rgba(255,255,255,0.25) 0%,rgba(255,255,255,0) 49%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  rgba(255,255,255,0.25) 0%,rgba(255,255,255,0) 49%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
-
+  background-color: rgba(255,255,255,0.25);
 }
 
 #hero li {
@@ -346,7 +303,6 @@ h2 {
 }
 
 #select-a-dealer {
-  /*height: 52px;*/
   margin: 0 31px;
   background: blue;
 }
@@ -368,7 +324,6 @@ h2 {
 #enter-zip {
   height: 100px;
   background: #EDEDED; 
-  /*margin: 0 31px;*/
 }
 
 #enter-zip ul {
@@ -424,7 +379,7 @@ h4 {
 }
 
 .list-count {
-
+  font-size: 25px;
 }
 
 .list-count p {
@@ -441,14 +396,6 @@ h4 {
   justify-content: space-between;
 }
 
-.item-info-left {
-  /*flex-grow: 1;*/
-}
-
-.item-info-right {
-  /*flex-grow: 1;*/
-}
-
 .item-info-right button {
   background: #3F63A1;
   width: 260px;
@@ -462,8 +409,6 @@ h4 {
   color: white;
   font-size: 26px;
 }
-
-
 
 .dealer-title {
 
@@ -479,22 +424,6 @@ h5 {
   font-size: 18px;
 }
 
-.dealer-address p {
-
-}
-
-.dealer-address p:first-child {
-
-}
-
-.dealer-address p:nth-child(2) {
-  
-}
-
-.dealer-address p:last-child {
-  
-}
-
 .dealer-phone {
   margin: 12px 0 0 0;
 }
@@ -505,7 +434,6 @@ h5 {
 
 h6 {
   font-size: 20px;
-
 }
 
 .review-content {
@@ -544,7 +472,6 @@ footer {
 #footer-disclaimer p {
   font-size: 13px;
   padding: 3px 0 0 9px;
-
 }
 
 .lower-footer {
