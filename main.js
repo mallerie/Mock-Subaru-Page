@@ -4,9 +4,9 @@ let locations = [
      address:
      {
          street: "4611 Hamilton Blvd",
-         mapStreet: "4611+Hamilton+Blvd+",
-         cityStateZip: "Allentown, PA, 18103",
-         mapCityStateZip: "Allentown,+PA,+18103",
+         map_street: "4611+Hamilton+Blvd+",
+         city_state_zip: "Allentown, PA, 18103",
+         map_city_state_zip: "Allentown,+PA,+18103",
          country: "USA",
 
      },
@@ -29,9 +29,9 @@ let locations = [
      address:
      {
          street: "5700 Sunrise Hwy",
-         mapStreet: "5700+Sunrise+Hwy"
-         cityStateZip: "Sayville, NY, 11782",
-         mapCityStateZip: "Sayville,+NY,+11782"
+         map_street: "5700+Sunrise+Hwy",
+         city_state_zip: "Sayville, NY, 11782",
+         map_city_state_zip: "Sayville,+NY,+11782",
          country: "USA"
      },
      phone: "631.567.8100",
@@ -53,9 +53,9 @@ let locations = [
      address:
      {
          street: "95 Old York Rd",
-         mapStreet: "95+Old+York+Rd",
-         cityStateZip: "Jenkintown, PA, 19046",
-         mapCityStateZip: "Jenkintown,+PA,+19046",
+         map_street: "95+Old+York+Rd",
+         city_state_zip: "Jenkintown, PA, 19046",
+         map_city_state_zip: "Jenkintown,+PA,+19046",
          country: "USA"
      },
      phone: "800.440.0130",
@@ -77,9 +77,9 @@ let locations = [
      address:
      {
          street: "4797 Convoy St",
-         mapStreet: "4797+Convoy+St",
-         cityStateZip: "San Diego, CA, 92111",
-         mapCityStateZip: "San Diego,+CA,+92111",
+         map_street: "4797+Convoy+St",
+         city_state_zip: "San Diego, CA, 92111",
+         map_city_state_zip: "San+Diego,+CA,+92111",
          country: "USA"
      },
      phone: "866.983.0813",
@@ -101,9 +101,9 @@ let locations = [
      address:
      {
          street: "46700 West Chester Pike",
-         mapStreet: "46700+West+Chester+Pike",
-         cityStateZip: "Newtown+Square,+PA+19073",
-         mapCityStateZip: "Newtown+Square,+PA+19073",
+         map_street: "46700+West+Chester+Pike",
+         city_state_zip: "Newtown Square, PA 19073",
+         map_city_state_zip: "Newtown+Square,+PA+19073",
          country: "USA"
      },
      phone: "610.353.6906",
@@ -124,10 +124,10 @@ let locations = [
      name: "The Autobarn Subaru of Countryside Parts",
      address:
      {
-         street: "6191+Joliet+Road",
-         mapStreet: "6191+Joliet+Road",
-         cityStateZip: "Countryside,+IL+60525",
-         mapCityStateZip: "Countryside,+IL+60525",
+         street: "6191 Joliet Road",
+         map_street: "6191+Joliet+Road",
+         city_state_zip: "Countryside, IL 60525",
+         map_city_state_zip: "Countryside,+IL+60525",
          country: "USA"
      },
      phone: "888.864.0263",
@@ -146,84 +146,93 @@ let locations = [
  },
  ];
 
-let dealerListItem = `<div class="dealer-list-item">
-
-          <div class="google-map">
-            <img src="https://maps.googleapis.com/maps/api/staticmap?center=`
-             + locations[0].address.mapStreet + locations[0].address.mapCityStateZip
-              + `&zoom=8&size=237x175&markers=` + locations[0].address.mapStreet + 
-              locations[0].address.mapCityStateZip + `">
-          </div>
-
-          <div class="list-count">
-            <p>1.</p>
-          </div>
-
-          <div class="dealer-details">
-
-            <div class="item-info">
-
-              <div class="item-info-left">
-
-                <div class="dealer-title">
-                  <h5>` + locations[0].name + `</h5>
-                </div>
-
-                <ul class="dealer-address">
-                  <li>` + locations[0].address.street + `</li>
-                  <li>` + locations[0].address.cityStateZip + `</li>
-                  <li>` + locations[0].address.country + `</li>
-                </ul>
-
-                <div class="dealer-phone">
-                  <p>` + locations[0].phone + `</p>
-                </div>
-
-              </div>
-
-              <div class="item-info-right">
-
-                <button>
-                  <a href="` + locations[0].dealer_website + `">
-                    Select This Dealer
-                  </a>              
-                </button>
-
-              </div>
-
-            </div>
-
-            <div class="review-info">
-              <div class="review-title">
-                <h6>Reviews</h6>
-              </div>
-
-              <div class="review-content">
-                <p>
-                  ` + locations[0].review + `
-                </p>
-              </div>
-
-              <div class="review-count">
-                <p>View ` + locations[0].review_count + ` Reivews</p>
-              </div>
-            </div>
-          </div>
-        </div>`
-
-// function postItem() {
-//   document.getElementById('all-dealers').innerHTML = dealerListItem;
-// }
-
-// postItem();
-
 locations.forEach(function (location) {
 
-  let theMapStreet = location.address.mapStreet;
+  let mapStreet       = location.address.map_street;
+  let mapCityStateZip = location.address.map_city_state_zip;
+  let name            = location.name;
+  let street          = location.address.street;
+  let cityStateZip    = location.address.city_state_zip;
+  let country         = location.address.country;
+  let phone           = location.phone;
+  let dealerWebsite   = location.dealer_website;
+  let review          = location.review;
+  let reviewCount     = location.review_count;
 
-  console.log(location);
-  console.log(theMapStreet);
+  let dealerListItem = `<div class="dealer-list-item">
+
+                          <div class="google-map">
+                            <img src="https://maps.googleapis.com/maps/api/staticmap?center=`
+                             + mapStreet + mapCityStateZip + `&zoom=8&size=237x175&markers=` 
+                             + mapStreet + mapCityStateZip + `">
+                          </div>
+
+                          <div class="list-count">
+                            <p>1.</p>
+                          </div>
+
+                          <div class="dealer-details">
+
+                            <div class="item-info">
+
+                              <div class="item-info-left">
+
+                                <div class="dealer-title">
+                                  <h5>` + name + `</h5>
+                                </div>
+
+                                <ul class="dealer-address">
+                                  <li>` + street + `</li>
+                                  <li>` + cityStateZip + `</li>
+                                  <li>` + country + `</li>
+                                </ul>
+
+                                <div class="dealer-phone">
+                                  <p>` + phone + `</p>
+                                </div>
+
+                              </div>
+
+                              <div class="item-info-right">
+
+                                <button>
+                                  <a href="` + dealerWebsite + `">
+                                    Select This Dealer
+                                  </a>              
+                                </button>
+
+                              </div>
+
+                            </div>
+
+                            <div class="review-info">
+                              <div class="review-title">
+                                <h6>Reviews</h6>
+                              </div>
+
+                              <div class="review-content">
+                                <p>
+                                  ` + review + `
+                                </p>
+                              </div>
+
+                              <div class="review-count">
+                                <p>View ` + reviewCount + ` Reivews</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>`
+
+ 
+    document.getElementById('all-dealers').innerHTML = dealerListItem;
+    
 })
+
+  // function postItem() {
+  //   document.getElementById('all-dealers').innerHTML = dealerListItem;
+
+  // }
+  //   postItem();
 
 
 
