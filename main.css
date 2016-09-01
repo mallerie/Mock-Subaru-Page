@@ -318,6 +318,7 @@ h4 {
   border-top: 1px solid black;
   padding: 28px 0 0 3px;
   display: flex;
+  min-height: 474px;
 }
 
 .google-map {
@@ -409,6 +410,11 @@ h6 {
 
 .review-content p {
   line-height: 20px;
+}
+
+.review-count {
+  margin: 11px 15px 0 0;
+  text-align: end;  
 }
 
 
