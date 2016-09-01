@@ -1,4 +1,5 @@
 let dealerListItem = "";
+
 let locations = [
  {
      name: "Ciocca Subaru Parts",
@@ -146,11 +147,11 @@ let locations = [
      dealer_website: "http://http://www.cioccasubaru.com/parts/index.htm"
  },
  ];
-let locationsCount = [];
+// let locationsCount = [];
 
-for (var i = locations.length; i = 1; i++) {
-  locationsCount.push(i);
-}
+// for (var i = locations.length; i = 1; i++) {
+//   locationsCount.push(i);
+// }
 
 locations.forEach(function (location) {
 
