@@ -1,3 +1,5 @@
+ let dealerListItem = "";
+
 let locations = [
  {
      name: "Ciocca Subaru Parts",
@@ -159,7 +161,7 @@ locations.forEach(function (location) {
   let review          = location.review;
   let reviewCount     = location.review_count;
 
-  let dealerListItem = `<div class="dealer-list-item">
+  dealerListItem += `<div class="dealer-list-item">
 
                           <div class="google-map">
                             <img src="https://maps.googleapis.com/maps/api/staticmap?center=`
@@ -221,13 +223,28 @@ locations.forEach(function (location) {
                               </div>
                             </div>
                           </div>
-                        </div>`
+                        </div>`;
 
  
     // document.appendChild('all-dealers') = dealerListItem;
-    .appendChild(document.createTextnode('all-dealers')) = dealerListItem;
-
+    // .appendChild(document.createTextnode('all-dealers')) = dealerListItem;
 })
+
+
+window.onload = function()
+{
+document.getElementById('.all-dealers').innerHTML = dealerListItem;
+}
+
+
+
+
+
+    // document.querySelector('.all-dealers').innerHTML = dealerListItem;
+
+
+
+
 
   // function postItem() {
   //   document.getElementById('all-dealers').innerHTML = dealerListItem;
