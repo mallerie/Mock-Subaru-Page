@@ -173,7 +173,7 @@ locations.forEach(function (location) {
                           </div>
 
                           <div class="list-count">
-                            
+                            1
                           </div>
 
                           <div class="dealer-details">
@@ -247,12 +247,12 @@ locationsCount.forEach(function(location) {
 
   count = "<p>" + location + ".</p>";
 
-  // document.getElementById('list-count').innerHTML = count;
     var x = document.getElementsByClassName('list-count');
     var i;
 
     for (i = 1; i <= x.length; i++) {
         x[i].innerHTML = count;
+    
   }
 
 })
